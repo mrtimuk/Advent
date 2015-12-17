@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Advent;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace Advent.D09_ShortestPath
         {
             Load();
 
-            var routes = Routes(places);
+            var routes = Utils.Permutations(places);
             int min = int.MaxValue;
             foreach (var route in routes)
             {
@@ -38,21 +39,6 @@ namespace Advent.D09_ShortestPath
 
         Dictionary<string, Dictionary<string, int>> distances =
             new Dictionary<string, Dictionary<string, int>>();
-
-        IEnumerable<string[]> Routes(IEnumerable<string> places)
-        {
-            if (places.Count() == 1)
-            {
-                yield return new[] { places.First() };
-                yield break;
-            }
-            foreach (var place in places)
-            {
-                var suffixes = Routes(places.Where(p => p != place));
-                foreach (var suffix in suffixes)
-                    yield return new[] { place }.Concat(suffix).ToArray();
-            }
-        }
 
         void Load()
         {

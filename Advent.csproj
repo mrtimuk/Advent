@@ -58,8 +58,12 @@
     <Compile Include="D10_LookSay\D10_LookSay.cs" />
     <Compile Include="D11_Password\D11_Password.cs" />
     <Compile Include="D12_Abacus\D12_Abacus.cs" />
+    <Compile Include="D13_DinnerTable\D13_DinnerTable.cs" />
+    <Compile Include="D14_ReindeerRace\D14_ReindeerRace.cs" />
+    <Compile Include="D15_CookieRecipe\D15_CookieRecipe.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -82,8 +86,19 @@
     <Content Include="D12_Abacus\D12.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="D13_DinnerTable\D13.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="D14_ReindeerRace\D14.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="D15_CookieRecipe\D15.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="D16_\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
