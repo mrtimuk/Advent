@@ -61,6 +61,7 @@
     <Compile Include="D13_DinnerTable\D13_DinnerTable.cs" />
     <Compile Include="D14_ReindeerRace\D14_ReindeerRace.cs" />
     <Compile Include="D15_CookieRecipe\D15_CookieRecipe.cs" />
+    <Compile Include="D16_AuntSue\D16_AuntSue.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
@@ -95,10 +96,15 @@
     <Content Include="D15_CookieRecipe\D15.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="D16_AuntSue\D16.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="D17_Eggnog\D17.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="D17_Eggnog\D17_Eggnog.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="D16_\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -10,7 +10,7 @@ namespace Advent
     {
         static void Main(string[] args)
         {
-            var d = new D15_CookieRecipe.D15_CookieRecipe();
+            var d = new D16_AuntSue.D16_AuntSue();
             d.Run();
             Console.ReadKey();
         }
